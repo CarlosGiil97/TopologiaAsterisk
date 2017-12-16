@@ -1,0 +1,16 @@
+//zona directa
+zone "cotillas.es" {
+	type master;
+	file "/etc/bind/zonas/db.cotillas.es";
+	allow-update { key "rndc-key"; };	
+};
+
+//zona inversa
+zone "2.34.210.in-addr.arpa" {
+	type master;
+	file "/etc/bind/zonas/db.2.34.210";
+	allow-update { key "rndc-key"; };
+};
+
+//DNS SECUNDARIO
+

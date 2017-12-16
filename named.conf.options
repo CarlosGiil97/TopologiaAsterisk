@@ -1,0 +1,17 @@
+options {
+	directory "/var/cache/bind";
+	auth-nxdomain no;
+	forwarders {
+	 	8.8.8.8;
+		8.8.4.4;
+	 };
+	allow-query {
+		210.34.2.2/24;
+		127.0.0.1;
+		};
+	allow-transfer {
+		210.34.2.2/24;
+		127.0.0.1;
+		};
+};
+
