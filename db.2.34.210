@@ -1,0 +1,15 @@
+$ORIGIN .
+$TTL 60	; 1 minute
+2.34.210.in-addr.arpa	IN SOA	ns1.2.34.210.in-addr.arpa. root.2.34.210.in-addr.arpa. (
+				13         ; serial
+				15         ; refresh (15 seconds)
+				60         ; retry (1 minute)
+				60         ; expire (1 minute)
+				60         ; minimum (1 minute)
+				)
+			NS	ns1.cotillas.es.
+$ORIGIN 2.34.210.in-addr.arpa.
+1			PTR	ns1.cotillas.es.
+$TTL 30	; 30 seconds
+23			PTR	gestoruno.cotillas.es.
+29			PTR	comercialuno.cotillas.es.
